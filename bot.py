@@ -1,8 +1,12 @@
 import random
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 
-TOKEN = "8787353448:AAHsnVDbN6B6IB_aVkuKdeeF-Jy9c1ym3uw"
+TOKEN = os.getenv("BOT_TOKEN")
+
+if TOKEN is None:
+    raise ValueError("BOT_TOKEN is not set")
 
 moods = {
     "sad": ["sad1.gif", "sad2.gif", "sad3.gif"],
