@@ -2,7 +2,7 @@ import random
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 
-TOKEN = "8787353448:AAEdEj127g1SN_JCcuRPC5-aed30Xc0mS9g"
+TOKEN = "8787353448:AAHsnVDbN6B6IB_aVkuKdeeF-Jy9c1ym3uw"
 
 moods = {
     "sad": ["sad1.gif", "sad2.gif", "sad3.gif"],
